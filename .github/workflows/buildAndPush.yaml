@@ -2,7 +2,7 @@ name: Build and push image to dockerhub
 on:
   push:
     tags:
-      - v*
+      - v**
 jobs:
   build:
     runs-on: ubuntu-latest
