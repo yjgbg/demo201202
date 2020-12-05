@@ -5,9 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
+    private static int x = 0;
     @GetMapping("hello")
     public String hello() {
         System.out.println("hello,world");
-        return "hello,world";
+        return "hello,world"+x++;
     }
 }
