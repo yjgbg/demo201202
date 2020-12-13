@@ -1,0 +1,15 @@
+# 因为我们Runner执行器设置为docker, 所以这里需要指定docker的版本
+image: docker:stable
+# 定义三个阶段
+stages:
+  - build
+build:
+  stage: build
+  script:
+    - docker build -t yjgbg/demo201202:201212130954 .
+    - docker login -u "yjgbg" -p "9f0d363a-a002-4699-8476-96e24b0288a5"
+    - docker push yjgbg/demo201202:201212130954
+  only:
+    - master
+  tags:
+    - test
