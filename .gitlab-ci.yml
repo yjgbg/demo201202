@@ -11,5 +11,3 @@ build:
     - docker push yjgbg/demo201202:201212130954
   only:
     - master
-  tags:
-    - test

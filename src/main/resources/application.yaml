@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://mariadb.yjgbg.life:3306/demo201202?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: yjgbg
+    password: 1314
