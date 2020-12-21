@@ -15,10 +15,12 @@ configurations {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
+    implementation 'org.flywaydb:flyway-core'
     implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.1'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.github.yjgbg:jpa-plus-spring-boot-starter:2.4.1.1'
